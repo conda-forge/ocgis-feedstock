@@ -17,14 +17,14 @@ build:
 requirements:
     build:
         - python
-        - fiona 1.6.3
+        - fiona
         - netcdf4
         - numpy
         - shapely
     run:
         - python
         - cf_units
-        - fiona 1.6.3
+        - fiona
         - netcdf4
         - numpy
         - shapely
