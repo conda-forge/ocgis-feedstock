@@ -1,8 +1,8 @@
 {% set version = "1.3.1" %}
 
 package:
-    name: ocgis
-    version: {{ version }}
+  name: ocgis
+  version: {{ version }}
 
 source:
     fn: ocgis-{{ version }}.tar.gz
@@ -17,33 +17,30 @@ build:
     script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - fiona
-        - netcdf4
-        - numpy
-        - shapely
-    run:
-        - python
-        - cf_units
-        - fiona
-        - netcdf4
-        - numpy
-        - shapely
-        - rtree
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - cf_units
+    - fiona
+    - netcdf4
+    - numpy
+    - shapely
+    - rtree
 
 test:
-    requires:
-        - nose
-    imports:
-        - ocgis
+  requires:
+    - nose
+  imports:
+    - ocgis
 
 about:
-    home: http://ncpp.github.io/ocgis/
-    license: NCSA License
-    summary: OCGIS is short for OpenClimateGIS, a set of geoprocessing and calculation tools for CF-compliant climate datasets.
+  home: http://ncpp.github.io/ocgis/
+  license: NCSA
+  summary: 'OCGIS is short for OpenClimateGIS, a set of geoprocessing and calculation tools for CF-compliant climate datasets.'
 
 extra:
-    recipe-maintainers:
-        - bekozi
-        - ocefpaf
+  recipe-maintainers:
+    - bekozi
+    - ocefpaf
