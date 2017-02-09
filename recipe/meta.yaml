@@ -8,9 +8,11 @@ source:
     fn: ocgis-{{ version }}.tar.gz
     url: https://github.com/NCPP/ocgis/archive/v{{ version }}.tar.gz
     sha256: d76ca32d81bdf52a71dde48a7641085ff280b9d9fea0a294fda3308942ca5230
+    patch:
+        - np_ma_average_squeeze.patch
 
 build:
-    number: 0
+    number: 1
     skip: True  # [py3k]
     script: python setup.py install --single-version-externally-managed --record record.txt
 
