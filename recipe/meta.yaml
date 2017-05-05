@@ -1,19 +1,20 @@
-{% set version = "1.3.1" %}
+#{% set version = "2.0.0.dev1" %}
 
 package:
   name: ocgis
-  version: {{ version }}
+  version: 2.0.0.dev1
+#  version: {{ version }}
 
 source:
-  fn: ocgis-{{ version }}.tar.gz
-  url: https://github.com/NCPP/ocgis/archive/v{{ version }}.tar.gz
-  sha256: d76ca32d81bdf52a71dde48a7641085ff280b9d9fea0a294fda3308942ca5230
-  patches:
-    - np_ma_average_squeeze.patch
+  git_tag: 2.0.0.dev1
+  git_url: https://github.com/NCPP/ocgis.git
+#  fn: ocgis-{{ version }}.tar.gz
+#  url: https://github.com/NCPP/ocgis/archive/v{{ version }}.tar.gz
+#  sha256: d76ca32d81bdf52a71dde48a7641085ff280b9d9fea0a294fda3308942ca5230
 
 build:
-  number: 1
-  skip: True  # [py3k]
+  number: 0
+#  skip: True  # [py3k]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -28,6 +29,7 @@ requirements:
     - numpy
     - shapely
     - rtree
+    - pyproj
 
 test:
   requires:
@@ -36,7 +38,7 @@ test:
     - ocgis
 
 about:
-  home: http://ncpp.github.io/ocgis/
+  home: http://ocgis.readthedocs.io/en/latest/
   license: NCSA
   summary: 'OCGIS is short for OpenClimateGIS, a set of geoprocessing and calculation tools for CF-compliant climate datasets.'
 
