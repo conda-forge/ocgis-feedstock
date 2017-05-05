@@ -6,7 +6,7 @@ package:
 #  version: {{ version }}
 
 source:
-  git_tag: 2.0.0.dev1
+  git_tag: v-2.0.0.dev1
   git_url: https://github.com/NCPP/ocgis.git
 #  fn: ocgis-{{ version }}.tar.gz
 #  url: https://github.com/NCPP/ocgis/archive/v{{ version }}.tar.gz
