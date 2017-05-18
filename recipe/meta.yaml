@@ -1,4 +1,4 @@
-{% set version = "1.3.2" %}
+{% set version = "2.0.0" %}
 
 package:
   name: ocgis
@@ -7,11 +7,10 @@ package:
 source:
   fn: ocgis-{{ version }}.tar.gz
   url: https://github.com/NCPP/ocgis/archive/v{{ version }}.tar.gz
-  sha256: b24f853d5f37ea2a809ec2d0cdebcaa4c21c80624a07a720212d3f3d0600b35f
+  sha256: bd9e48f4506a964b154e057e1f61925773486f902aca8ef8bd232320ebb0667a
 
 build:
   number: 0
-  skip: True  # [py3k]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -26,6 +25,8 @@ requirements:
     - numpy
     - shapely
     - rtree
+    - pyproj
+    - mpi4py
 
 test:
   requires:
