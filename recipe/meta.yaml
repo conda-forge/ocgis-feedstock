@@ -7,7 +7,7 @@ package:
 source:
   fn: ocgis-{{ version }}.tar.gz
   url: https://github.com/NCPP/ocgis/archive/v{{ version }}.tar.gz
-  sha256: bd9e48f4506a964b154e057e1f61925773486f902aca8ef8bd232320ebb0667a
+  sha256: e2bebc51aa2d553450d941868409c8587a35b4d81588751afb6af83d567afc52
 
 build:
   number: 0
