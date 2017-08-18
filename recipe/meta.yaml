@@ -21,6 +21,7 @@ requirements:
     - python
     - cf_units
     - fiona
+    - gdal 2.1*
     - netcdf4
     - numpy
     - shapely
