@@ -42,6 +42,8 @@ test:
     - mock
   imports:
     - ocgis
+  commands:
+    - ocli chunked_rwg --help
 
 about:
   home: http://ocgis.readthedocs.io/en/latest/
