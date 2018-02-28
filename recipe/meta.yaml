@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: ocgis
@@ -17,6 +17,13 @@ requirements:
   build:
     - python
     - setuptools
+    - gdal 2.1*
+    - pyproj
+    - shapely
+    - fiona
+    - six
+    - numpy
+    - netcdf4
   run:
     - python
     - cf_units
@@ -32,13 +39,14 @@ requirements:
 test:
   requires:
     - nose
+    - mock
   imports:
     - ocgis
 
 about:
   home: http://ocgis.readthedocs.io/en/latest/
   license: NCSA
-  summary: 'OCGIS is short for OpenClimateGIS, a set of geoprocessing and calculation tools for CF-compliant climate datasets.'
+  summary: 'OpenClimateGIS (OCGIS) provides geoprocessing and calculation tools for spatiotemporal datasets.'
 
 extra:
   recipe-maintainers:
