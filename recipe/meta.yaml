@@ -17,7 +17,7 @@ requirements:
   build:
     - python
     - setuptools
-    - gdal 2.1*
+    - gdal 2.2*
     - pyproj
     - shapely
     - fiona
@@ -28,7 +28,7 @@ requirements:
     - python
     - cf_units
     - fiona
-    - gdal 2.1*
+    - gdal 2.2*
     - netcdf4
     - numpy
     - shapely
