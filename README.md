@@ -1,13 +1,13 @@
 About ocgis
 ===========
 
-Home: http://ncpp.github.io/ocgis/
+Home: http://ocgis.readthedocs.io/en/latest/
 
 Package license: NCSA
 
 Feedstock license: BSD 3-Clause
 
-Summary: OCGIS is short for OpenClimateGIS, a set of geoprocessing and calculation tools for CF-compliant climate datasets.
+Summary: OpenClimateGIS (OCGIS) provides geoprocessing and calculation tools for spatiotemporal datasets.
 
 
 
@@ -66,6 +66,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
