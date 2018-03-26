@@ -5,36 +5,29 @@ package:
   version: {{ version }}
 
 source:
-  fn: ocgis-{{ version }}.tar.gz
   url: https://github.com/NCPP/ocgis/archive/v{{ version }}.tar.gz
   sha256: 9cd680ce2bf8a25f50c4123145f16806b63484bc1b5d10408acd1d144f828eaa
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
-    - gdal 2.2*
-    - pyproj
-    - shapely
-    - fiona
-    - six
-    - numpy
-    - netcdf4
+    - pip
   run:
     - python
     - cf_units
     - fiona
-    - gdal 2.2*
+    - gdal 2.2.*
+    - mpi4py
     - netcdf4
     - numpy
-    - shapely
-    - rtree
     - pyproj
-    - mpi4py
+    - rtree
+    - shapely
+    - six
 
 test:
   requires:
