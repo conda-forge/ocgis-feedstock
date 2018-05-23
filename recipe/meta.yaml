@@ -9,7 +9,7 @@ source:
   sha256: 9cd680ce2bf8a25f50c4123145f16806b63484bc1b5d10408acd1d144f828eaa
 
 build:
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
     - fiona
     - gdal 2.2.*
     - mpi4py
-    - netcdf4
+    - netcdf4 <1.4
     - numpy
     - pyproj
     - rtree
