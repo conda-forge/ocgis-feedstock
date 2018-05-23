@@ -22,7 +22,7 @@ requirements:
     - fiona
     - gdal 2.2.*
     - mpi4py
-    - netcdf4
+    - netcdf4 <1.4
     - numpy
     - pyproj
     - rtree
