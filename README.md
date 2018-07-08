@@ -14,14 +14,15 @@ Summary: OpenClimateGIS (OCGIS) provides geoprocessing and calculation tools for
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ocgis-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ocgis-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/ocgis-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ocgis-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ocgis-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ocgis-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/ocgis-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/ocgis-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ocgis/badges/version.svg)](https://anaconda.org/conda-forge/ocgis)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ocgis/badges/downloads.svg)](https://anaconda.org/conda-forge/ocgis)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ocgis-green.svg)](https://anaconda.org/conda-forge/ocgis) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ocgis.svg)](https://anaconda.org/conda-forge/ocgis) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ocgis.svg)](https://anaconda.org/conda-forge/ocgis) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ocgis.svg)](https://anaconda.org/conda-forge/ocgis) |
 
 Installing ocgis
 ================
