@@ -22,6 +22,7 @@ requirements:
     - cf-units
     - fiona
     - mpi4py
+    - mpich
     - netcdf4 <1.4
     - numpy
     - pyproj
