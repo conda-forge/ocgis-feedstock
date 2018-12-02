@@ -37,7 +37,7 @@ test:
   imports:
     - ocgis
   commands:
-    - ocli chunked_rwg --help
+    - ocli chunked-rwg --help
 
 about:
   home: http://ocgis.readthedocs.io/en/latest/
