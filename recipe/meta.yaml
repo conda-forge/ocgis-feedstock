@@ -1,15 +1,17 @@
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: ocgis
   version: {{ version }}
 
 source:
-  url: https://github.com/NCPP/ocgis/archive/v{{ version }}.tar.gz
-  sha256: 9cd680ce2bf8a25f50c4123145f16806b63484bc1b5d10408acd1d144f828eaa
+  git_url: https://github.com/NCPP/ocgis.git
+  git_tag: master
+#  url: https://github.com/NCPP/ocgis/archive/v{{ version }}.tar.gz
+#  sha256: 9cd680ce2bf8a25f50c4123145f16806b63484bc1b5d10408acd1d144f828eaa
 
 build:
-  number: 3
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -23,7 +25,7 @@ requirements:
     - fiona
     - mpi4py
     - mpich
-    - netcdf4 <1.4
+    - netcdf4
     - numpy
     - pyproj
     - rtree
