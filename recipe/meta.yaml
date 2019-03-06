@@ -8,7 +8,7 @@ source:
   git_url: https://github.com/NCPP/ocgis.git
   git_tag: master
   url: https://github.com/NCPP/ocgis/archive/v{{ version }}.tar.gz
-  sha256: f071685ab201d879e0efb0a7d7107e24b11c40e3bf8c7907502e8f68ff646657
+  sha256: 9d38b6b9d09adc20f9f03a41935d4a17dce56dbdc5c37b8ffeaed3e1ea3987d3
 
 build:
   number: 0
