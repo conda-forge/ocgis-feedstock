@@ -40,6 +40,7 @@ test:
     - ocgis
   commands:
     - ocli chunked-rwg --help
+    - ocli chunked-smm --help
 
 about:
   home: http://ocgis.readthedocs.io/en/latest/
