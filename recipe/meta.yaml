@@ -1,4 +1,4 @@
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: ocgis
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/NCPP/ocgis/archive/v{{ version }}.tar.gz
-  sha256: 9cd680ce2bf8a25f50c4123145f16806b63484bc1b5d10408acd1d144f828eaa
+  sha256: 9d38b6b9d09adc20f9f03a41935d4a17dce56dbdc5c37b8ffeaed3e1ea3987d3
 
 build:
-  number: 3
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -23,7 +23,7 @@ requirements:
     - fiona
     - mpi4py
     - mpich
-    - netcdf4 <1.4
+    - netcdf4
     - numpy
     - pyproj
     - rtree
@@ -38,6 +38,7 @@ test:
     - ocgis
   commands:
     - ocli chunked-rwg --help
+    - ocli chunked-smm --help
 
 about:
   home: http://ocgis.readthedocs.io/en/latest/
