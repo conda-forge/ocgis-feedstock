@@ -1,4 +1,4 @@
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: ocgis
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/NCPP/ocgis/archive/v{{ version }}.tar.gz
-  sha256: 9cd680ce2bf8a25f50c4123145f16806b63484bc1b5d10408acd1d144f828eaa
+  sha256: f071685ab201d879e0efb0a7d7107e24b11c40e3bf8c7907502e8f68ff646657
 
 build:
-  number: 3
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
