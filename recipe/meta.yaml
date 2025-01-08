@@ -9,16 +9,16 @@ source:
   sha256: 9d38b6b9d09adc20f9f03a41935d4a17dce56dbdc5c37b8ffeaed3e1ea3987d3
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - cf-units
     - fiona
     - mpi4py
@@ -34,6 +34,7 @@ test:
   requires:
     - nose
     - mock
+    - python {{ python_min }}
   imports:
     - ocgis
   commands:
