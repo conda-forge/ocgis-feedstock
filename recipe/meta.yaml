@@ -30,6 +30,7 @@ requirements:
     - rtree
     - shapely
     - six
+    - gdal
 
 test:
   requires:
